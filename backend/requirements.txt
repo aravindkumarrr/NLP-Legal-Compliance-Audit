@@ -1,0 +1,30 @@
+# --- Web framework ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9        # file upload support
+
+# --- Config / env ---
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# --- Databases / clients ---
+sqlalchemy==2.0.35
+psycopg2-binary==2.9.9         # Postgres driver
+qdrant-client==1.11.2
+neo4j==5.24.0
+
+# --- NLP / ML (CPU-friendly) ---
+sentence-transformers==3.1.1
+spacy==3.7.6
+
+# --- LLM backends for deontic classification / compliance judgment ---
+ollama==0.3.3                  # local backend (default)
+groq==0.11.0                   # hosted backend (set LLM_PROVIDER=groq to use)
+
+# --- PDF/DOCX text extraction ---
+pypdf==4.3.1
+python-docx==1.1.2
+
+# --- Dev/test ---
+pytest==8.3.3
+httpx==0.27.2
